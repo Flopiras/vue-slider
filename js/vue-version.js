@@ -46,7 +46,10 @@ const app = createApp({
             else this.currentIndex++;
         },
         goToPrevPic(){
-            this.currentIndex--;
+            if(this.currentIndex === 0){
+                this.currentIndex = this.images.length - 1;
+            }
+            else this.currentIndex--;
         }
     }
 });
