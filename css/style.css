@@ -5,21 +5,20 @@
 
 /* BIG CAROUSEL */
 .gallery{
-    height: 500px;
-    width: 400px;
+    height: 800px;
+    width: 1000px;
     margin: 0 auto;
     position: relative;
 }
 
 .gallery img{
-    /* display: none; */
     width: 100%;
 }
 
 .gallery .caption{
     position: absolute;
     top: 20px;
-    left: 0px;
+    left: 50px;
     color: white;
 }
 
@@ -27,7 +26,7 @@
 .gallery img,
 .thumbnails img{
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 10px;
 }
 
@@ -39,15 +38,15 @@
 #prev,
 #next{
     position: absolute;
-    top: 250px;
+    top: 350px;
 }
 
 #prev{
-    left: 360px
+    left: 100px
 }
 
 #next{
-    right: 360px;
+    right: 100px;
 }
 
 /* LITTLE CAROUSEL */
