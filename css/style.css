@@ -39,6 +39,7 @@
 #next{
     position: absolute;
     top: 350px;
+    cursor: pointer;
 }
 
 #prev{
