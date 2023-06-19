@@ -50,8 +50,10 @@
 }
 
 /* LITTLE CAROUSEL */
-.thumbnails{
+.thumbnails img{
     height: 100px;
+    width: 200px;
+    padding: 3px;
 }
 
 .bordered{
