@@ -38,16 +38,16 @@
 #prev,
 #next{
     position: absolute;
-    top: 350px;
+    top: 400px;
     cursor: pointer;
 }
 
 #prev{
-    left: 180px
+    left: 100px
 }
 
 #next{
-    right: 180px;
+    right: 100px;
 }
 
 /* LITTLE CAROUSEL */
