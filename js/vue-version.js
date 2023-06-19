@@ -45,16 +45,25 @@ const app = createApp({
             }
             else this.currentIndex++;
         },
-        goToPrevPic(){
+        goToPrevPic() {
             if(this.currentIndex === 0){
                 this.currentIndex = this.images.length - 1;
             }
             else this.currentIndex--;
         },
-        setCurrentIndex(targetIndex){
+        setCurrentIndex(targetIndex) {
             this.currentIndex = targetIndex;
+        },
+        startAutoNext() {
+            this.autoNext = setInterval(this.goToNextPic, 3000);
+        },
+        stopAutoNext() {
+            clearInterval(this.autoNext)
         }
-    }
+    },
+    mounted() {
+        this.startAutoNext();
+    },
 });
 
 

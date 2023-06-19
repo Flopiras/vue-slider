@@ -34,21 +34,21 @@
                 <!-- caarousel gallery -->
                 <div class="gallery" v-for="(pic, i) in images" v-show="currentIndex === i">
                     <!-- prev -->
-                    <i class="fa-solid fa-circle-chevron-left fa-2xl text-white" id="prev" @click="goToPrevPic()"></i>
-                    <img :src="pic.image" :alt="pic.title">
+                    <i class="fa-solid fa-circle-chevron-left fa-2xl text-white" id="prev" @click="goToPrevPic"></i>
+                    <img :src="pic.image" :alt="pic.title" @mouseenter="stopAutoNext()" @mouseleave="startAutoNext()">
                     <div class="caption text-center">
                         <h3> {{ pic.title }} </h3>
                         <p> {{ pic.text }} </p>
                     </div>
                     <!-- next -->
-                    <i class="fa-solid fa-circle-chevron-right fa-2xl text-white" id="next" @click="goToNextPic()"></i>
+                    <i class="fa-solid fa-circle-chevron-right fa-2xl text-white" id="next" @click="goToNextPic"></i>
                 </div>
 
             </div>
             <div class="little-carousel d-flex justify-content-center">
                 <div class="thumbnails " v-for="(pic, i) in images">
                     <img :src="pic.image" :alt="pic.title" :class="{active : currentIndex === i}"
-                        @click="setCurrentIndex(i)">
+                        @click="setCurrentIndex(i)" @mouseenter="stopAutoNext()" @mouseleave="startAutoNext()">
                 </div>
             </div>
         </div>
