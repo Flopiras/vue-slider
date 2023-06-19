@@ -1,0 +1,53 @@
+/* CAROUSEL */
+.carousel{
+    height: 800px;
+}
+
+/* BIG CAROUSEL */
+.gallery{
+    height: 500px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.gallery img{
+    display: none;
+    width: 100%;
+}
+
+
+.gallery img,
+.thumbnails img{
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.big-carousel{
+    position: relative;
+}
+
+/* arrows carousel */
+#prev,
+#next{
+    position: absolute;
+    top: 250px;
+}
+
+#prev{
+    left: 360px
+}
+
+#next{
+    right: 360px;
+}
+
+/* LITTLE CAROUSEL */
+.thumbnails{
+    height: 100px;
+}
+
+.bordered{
+    border: 2px solid goldenrod;
+}
+
