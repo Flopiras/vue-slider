@@ -50,6 +50,9 @@ const app = createApp({
                 this.currentIndex = this.images.length - 1;
             }
             else this.currentIndex--;
+        },
+        setCurrentIndex(targetIndex){
+            this.currentIndex = targetIndex;
         }
     }
 });

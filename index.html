@@ -47,7 +47,8 @@
             </div>
             <div class="little-carousel d-flex justify-content-center">
                 <div class="thumbnails " v-for="(pic, i) in images">
-                    <img :src="pic.image" :alt="pic.title" :class="{active : currentIndex === i}">
+                    <img :src="pic.image" :alt="pic.title" :class="{active : currentIndex === i}"
+                        @click="setCurrentIndex(i)">
                 </div>
             </div>
         </div>
