@@ -26,6 +26,7 @@
     </header>
 
     <main>
+        <!-- Vue root -->
         <div id="root" class="container text-center">
             <!--carousel  -->
             <div class="big-carousel mb-1">
@@ -33,7 +34,7 @@
                 <i class="fa-solid fa-circle-chevron-left fa-2xl text-white" id="prev"></i>
                 <!-- caarousel gallery -->
                 <div class="gallery">
-                    <!-- <img src="img/01.webp" alt=""> -->
+                    <img v-for="pic in images" :src="pic.image" :alt="pic.title">
                 </div>
                 <!-- next -->
                 <i class="fa-solid fa-circle-chevron-right fa-2xl text-white" id="next"></i>
