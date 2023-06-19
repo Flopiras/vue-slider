@@ -7,6 +7,7 @@ const app = createApp({
     name: 'carousel',
     data(){
         return{
+            currentIndex: 0,
             images: [
                 {
                     image: 'img/01.webp',

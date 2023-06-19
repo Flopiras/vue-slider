@@ -33,8 +33,12 @@
                 <!-- prev -->
                 <i class="fa-solid fa-circle-chevron-left fa-2xl text-white" id="prev"></i>
                 <!-- caarousel gallery -->
-                <div class="gallery">
-                    <img v-for="pic in images" :src="pic.image" :alt="pic.title">
+                <div class="gallery" v-for="(pic, i) in images">
+                    <img :src="pic.image" :alt="pic.title" v-show="!(currentIndex = i)">
+                    <div class="caption">
+                        <h3> {{ pic.title }} </h3>
+                        <p> {{ pic.text }} </p>
+                    </div>
                 </div>
                 <!-- next -->
                 <i class="fa-solid fa-circle-chevron-right fa-2xl text-white" id="next"></i>
