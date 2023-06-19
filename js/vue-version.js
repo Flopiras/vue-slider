@@ -38,9 +38,9 @@ const app = createApp({
         }
     },
     methods: {
-        goToNextPic(){
+        goToNextPic() {
             currentIndex++;
-        }
+        },
     }
 });
 

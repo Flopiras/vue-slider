@@ -33,19 +33,19 @@
                 <!-- prev -->
                 <i class="fa-solid fa-circle-chevron-left fa-2xl text-white" id="prev"></i>
                 <!-- caarousel gallery -->
-                <div class="gallery" v-for="(pic, i) in images">
-                    <img :src="pic.image" :alt="pic.title" v-show="currentIndex">
+                <div class="gallery" v-for="(pic, i) in images" v-show="currentIndex === i">
+                    <img :src="pic.image" :alt="pic.title">
                     <div class="caption">
                         <h3> {{ pic.title }} </h3>
                         <p> {{ pic.text }} </p>
                     </div>
                 </div>
                 <!-- next -->
-                <i class="fa-solid fa-circle-chevron-right fa-2xl text-white" id="next" @click:goToNextPic></i>
+                <i class="fa-solid fa-circle-chevron-right fa-2xl text-white" id="next"></i>
             </div>
             <div class="little-carousel d-flex justify-content-center">
                 <div class="thumbnails " v-for="(pic, i) in images">
-                    <img :src="pic.image" alt="">
+                    <img :src="pic.image" :alt="pic.title" :class="{active : currentIndex === i}">
                 </div>
             </div>
         </div>

@@ -55,9 +55,10 @@
     height: 100px;
     width: 200px;
     padding: 3px;
+    cursor: pointer;
 }
 
-.bordered{
+.active{
     border: 2px solid goldenrod;
 }
 
