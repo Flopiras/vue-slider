@@ -41,6 +41,9 @@ const app = createApp({
         goToNextPic() {
             currentIndex++;
         },
+        goToPrevPic(){
+            currentIndex--;
+        }
     }
 });
 
