@@ -34,7 +34,7 @@
                 <!-- caarousel gallery -->
                 <div class="gallery" v-for="(pic, i) in images" v-show="currentIndex === i">
                     <!-- prev -->
-                    <i class="fa-solid fa-circle-chevron-left fa-2xl text-white" id="prev"></i>
+                    <i class="fa-solid fa-circle-chevron-left fa-2xl text-white" id="prev" @click="goToPrevPic()"></i>
                     <img :src="pic.image" :alt="pic.title">
                     <div class="caption text-center">
                         <h3> {{ pic.title }} </h3>

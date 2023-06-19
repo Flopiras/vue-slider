@@ -39,10 +39,14 @@ const app = createApp({
     },
     methods: {
         goToNextPic() {
-            currentIndex++;
+            if(this.currentIndex === this.images.length - 1){
+
+                this.currentIndex = 0;
+            }
+            else this.currentIndex++;
         },
         goToPrevPic(){
-            currentIndex--;
+            this.currentIndex--;
         }
     }
 });
